@@ -3,7 +3,7 @@ html {
   padding:0;
   /*background: url(image/fond2.jpg) repeat center fixed;*/ 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: auto; /* version standardisée */
+ background-size: auto; 
   background-image : url(image/fond3.jpg);
   background-repeat : repeat;
   background-position : center fixed;
@@ -99,4 +99,69 @@ img.ri:empty
   clear: both;
   display: inline;
   float: left;
+}
+
+@media screen and (max-width: 1280px) {
+
+	/* Styles */
+	html, body {
+	  overflow-x: hidden;
+	}
+	body {
+	  position: relative;
+	  
+	}
+	
+	body:before {
+		content: "";
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -10;
+		background: url(image/fond3.jpg) repeat center center fixed; 
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+	
+	img.ri
+	{
+		position: relative;
+		width: 90%;
+		margin-top : 50%;
+		margin-left : -20%;
+		margin-bottom : 0px;
+	}
+	
+	#u348-4 {
+		background-color: transparent;
+		font-family: open-sans,sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		margin-left : -28%;
+		margin-top: -42%;
+		position: relative;
+		text-align: left;
+		width: 90%;
+		text-shadow: 0px 0px 10px rgba(163, 107, 88,0.6), 0px 0px 30px rgba(163, 107, 88,0.4), 0px 0px 50px rgba(163, 107, 88,0.3), 0px 0px 180px rgba(163, 107, 88,0.3);
+		color: rgba(163, 107, 88, 1);
+		font: 20px 'ChunkFiveRegular';
+	}
+	
+	#u349-4 {
+		background-color: transparent;
+		color: rgb(163, 107, 88);
+		font-family: open-sans,sans-serif;
+		font-size: 15px;
+		font-weight: 300;
+		margin-top: -35%;
+		position: relative;
+		text-align: left;
+		margin-left : -35%;
+	}
+
 }
