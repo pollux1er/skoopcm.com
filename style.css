@@ -101,7 +101,7 @@ img.ri:empty
   float: left;
 }
 
-@media screen and (max-width: 1280px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 	/* Styles */
 	html, body {
@@ -162,6 +162,67 @@ img.ri:empty
 		position: relative;
 		text-align: left;
 		margin-left : -35%;
+	}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+	/* Styles */
+	html, body {
+	  overflow-x: hidden;
+	}
+	body {
+	  position: relative;
+	  
+	}
+	
+	body:before {
+		content: "";
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -10;
+		background: url(image/fond3.jpg) repeat center center fixed; 
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+	
+	img.ri
+	{
+		position: relative;
+		width: 90%;
+		margin-top : 50%;
+		margin-left : -20%;
+		margin-bottom : 0px;
+	}
+	
+	#u348-4 {
+		background-color: transparent;
+		font-family: open-sans,sans-serif;
+		font-weight: 400;
+		margin-top: -42%;
+		position: relative;
+		text-align: center;
+		text-shadow: 0px 0px 10px rgba(163, 107, 88,0.6), 0px 0px 30px rgba(163, 107, 88,0.4), 0px 0px 50px rgba(163, 107, 88,0.3), 0px 0px 180px rgba(163, 107, 88,0.3);
+		color: rgba(163, 107, 88, 1);
+		font: 45px 'ChunkFiveRegular';
+		margin-left : -2%;
+	}
+	
+	#u349-4 {
+		background-color: transparent;
+		color: rgb(163, 107, 88);
+		font-family: open-sans,sans-serif;
+		font-weight: 300;
+		position: relative;
+		text-align: center;
+		margin-left : 4%;
 	}
 
 }
